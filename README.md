@@ -4,7 +4,7 @@ This repository hosts my professional resume and portfolio.
 
 ## How to View
 
-You can view my resume [here](https://surajgupta0.github.io/my-resume/).
+You can view my resume [here](https://surajgupta0.github.io/Resume/).
 
 ## About Me
 
