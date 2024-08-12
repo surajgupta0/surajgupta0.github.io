@@ -97,6 +97,7 @@ h6 {
   padding: 15px;
   margin-bottom: 24px;
   font-weight: 600;
+  transition: 0.3s all;
 }
 
 .php-email-form .sent-message {
@@ -107,6 +108,7 @@ h6 {
   padding: 15px;
   margin-bottom: 24px;
   font-weight: 600;
+  transition: 0.3s all;
 }
 
 .php-email-form .loading {

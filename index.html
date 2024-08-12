@@ -1,9 +1,111 @@
-<!-- <?php
-  include "header.php";
-?> -->
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  
+  <title>Resume Page</title>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <link href="assets/img/my-profile-img.png" rel="icon">
+    <link href="assets/img/my-profile-img.png" rel="apple-touch-icon">
+  
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Main CSS File -->
+    <link href="assets/css/main.css" rel="stylesheet">
+  
+    <script src="assets/js/portfolio-data.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script >
+      (function() {
+        emailjs.init({
+          publicKey: "MdlJz6zdhcyQGE1Vq",
+        }); // Replace with your EmailJS User ID
+    })();
+
+    function displayError(msg) {
+      document.querySelector('.loading').classList.remove('d-block');
+      document.querySelector('.error-message').innerHTML = msg;
+      document.querySelector('.error-message').classList.add('d-block');
+      setInterval(function() {document.querySelector('.error-message').classList.remove('d-block');}, 5000);
+    }
+
+    function displaySuccess(msg) {
+      document.querySelector('.loading').classList.remove('d-block');
+      document.querySelector('.sent-message').innerHTML = msg;
+      document.querySelector('.sent-message').classList.add('d-block');
+      setInterval(function() {document.querySelector('.sent-message').classList.remove('d-block');}, 5000);
+
+    }
+
+    window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(e) {
+          event.preventDefault();
+          const form = e.target;
+          document.querySelector('.loading').classList.add('d-block');
+          // Send email using EmailJS
+          emailjs.sendForm('service_is2nfkf', 'template_ap9ykyc', form)
+              .then(response => {
+                displaySuccess('Message sent successfully!');
+                  form.reset(); // Reset the form after successful submission
+              })
+              .catch(error => {
+                  displayError('Error sending message: ' + error);
+              });
+      });
+  }
+    </script>
+
+</head>
+
+<body class="index-page">
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.png" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Surajkumar Gupta</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.youtube.com/@techdev5240" class="youtube"><i class="bi bi-youtube"></i></a>
+      <a href="https://www.facebook.com/surajgupta19022019" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/surajgupta19_02_2019/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://github.com/surajgupta0" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/suraj-gupta-mca/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
   <main class="main">
-
     <!-- Hero Section -->
     <section id="hero" class="hero section dark-background">
 
@@ -316,25 +418,29 @@
             <li data-filter=".filter-web-app">Web App</li>
           </ul><!-- End Portfolio Filters -->
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+          <div id = "portfolio-container" class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-          <?php
-            foreach($portfolio as $key => $data){
-          ?>
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-<?php echo $data['type'] ?>">
-              <div class="portfolio-content h-100">
-                <img src="<?php echo $data['img']['main'] ?>" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4><?php echo $data['title'] ?></h4>
-                  <p><?php echo $data['desc'] ?></p>
-                  <a href="assets/img/portfolio/Being-Sevak-Charitable-Trust.png" title="Being Sevak" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.php?id=<?php echo $key ?>" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-            <?php
-              }
-            ?>
+       
+          <script>
+
+            portfolio_data.forEach((item,index) =>{
+              document.getElementById('portfolio-container').innerHTML += `
+                  <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.type}">
+                    <div class="portfolio-content h-100">
+                      <img src="${item.img.main}" class="img-fluid" alt="">
+                      <div class="portfolio-info">
+                        <h4>${item.title}</h4>
+                        <p>${item.desc}</p>
+                        <a href="${item.img.main}" title="${item.title}" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                        <a href="portfolio-details.html?id=${item.index}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                      </div>
+                    </div>
+                  </div><!-- End Portfolio Item -->
+              `;
+          });
+          
+          </script>
+
 
           </div><!-- End Portfolio Container -->
 
@@ -387,17 +493,17 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+            <form id="contact-form" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
 
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <input type="text" name="from_name" id="name-field" class="form-control" required="">
                 </div>
 
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <input type="email" class="form-control" name="from_email" id="email-field" required="">
                 </div>
 
                 <div class="col-md-12">
@@ -413,7 +519,7 @@
                 <div class="col-md-12 text-center">
                   <div class="loading">Loading</div>
                   <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                  <div class="sent-message"></div>
 
                   <button type="submit">Send Message</button>
                 </div>
@@ -429,6 +535,27 @@
     </section><!-- /Contact Section -->
 
   </main>
-<?php
-  include "footer.php";
-?>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
