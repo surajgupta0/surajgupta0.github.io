@@ -1,6 +1,6 @@
 var portfolio_data = [
     {
-        title: "Being Seval Charitable Trust",
+        title: "Being Sevak Charitable Trust",
         desc: "Being Sevak Charitable Trust represents as National Non-profit Organizations working since 2015 as a servant of society.",
         date: "01 March, 2020",
         url: "https://beingsevak.org/",
