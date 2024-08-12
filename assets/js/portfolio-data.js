@@ -7,11 +7,11 @@ var portfolio_data = [
         company: "Being Sevak",
         type: "wordpress",
         img: {
-            main: "assets/img/portfolio/Being-Sevak-Charitable-Trust-main.png",
+            main: "assets/img/portfolio/Being Sevak/Being-Sevak-Charitable-Trust-main.png",
             slider: [
-                "assets/img/portfolio/Being-Sevak-Charitable-Trust.png",
-                "assets/img/portfolio/Donation-–-Being-Sevak-Charitable-Trust.png",
-                "assets/img/portfolio/Mission-Vidhya-–-Being-Sevak-Charitable-Trust.png",
+                "assets/img/portfolio/Being Sevak/Being-Sevak-Charitable-Trust.png",
+                "assets/img/portfolio/Being Sevak/Donation-–-Being-Sevak-Charitable-Trust.png",
+                "assets/img/portfolio/Being Sevak/Mission-Vidhya-–-Being-Sevak-Charitable-Trust.png",
             ],
         },
     },
@@ -23,11 +23,11 @@ var portfolio_data = [
         company: "Aashray for life foundation",
         type: "wordpress",
         img: {
-            main: "assets/img/portfolio/Ashray-For-Life-Foundation.png",
+            main: "assets/img/portfolio/Aashray/Ashray-For-Life-Foundation-main.png",
             slider: [
-                "assets/img/portfolio/Ashray-For-Life-Foundation.png",
-                "assets/img/portfolio/Ashray-For-Life-Foundation.png",
-                "assets/img/portfolio/Ashray-For-Life-Foundation.png",
+                "assets/img/portfolio/Aashray/Images-–-Ashray-For-Life-Foundation.png",
+                "assets/img/portfolio/Aashray/Donate-–-Ashray-For-Life-Foundation.png",
+                "assets/img/portfolio/Aashray/Ashray-For-Life-Foundation.png",
             ],
         },
     },
