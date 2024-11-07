@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -412,17 +413,18 @@
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+          <ul id="portfolio-tab-container" class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-wordpress">Wordpress</li>
-            <li data-filter=".filter-web-app">Web App</li>
           </ul><!-- End Portfolio Filters -->
 
           <div id = "portfolio-container" class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
        
           <script>
-
+            portfolio_category.forEach((item,index) =>{
+               document.getElementById('portfolio-tab-container').innerHTML += `<li data-filter=".filter-${item}">index</li>`;
+            });
+            
             portfolio_data.forEach((item,index) =>{
               document.getElementById('portfolio-container').innerHTML += `
                   <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-${item.type}">
