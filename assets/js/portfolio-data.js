@@ -41,8 +41,8 @@ var portfolio_data = [
         img: {
             main: "assets/img/portfolio/Price Convertor/price-convertor.png",
             slider: [
-                "assets/img/portfolio/Price Convertor/price-convertor.png",
-                "assets/img/portfolio/Price Convertor/price-convertor-select.png",
+                "assets/img/portfolio/price-convertor.png",
+                "assets/img/portfolio/price-convertor-select.png",
             ],
         },
     },
