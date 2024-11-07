@@ -421,8 +421,8 @@
 
        
           <script>
-            portfolio_category.forEach((item,index) =>{
-               document.getElementById('portfolio-tab-container').innerHTML += `<li data-filter=".filter-${item}">index</li>`;
+            Object.keys(portfolio_category).forEach((item) =>{
+               document.getElementById('portfolio-tab-container').innerHTML += `<li data-filter=".filter-${item}">${portfolio_category[item]}</li>`;
             });
             
             portfolio_data.forEach((item,index) =>{
