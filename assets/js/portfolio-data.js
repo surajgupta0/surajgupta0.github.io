@@ -58,12 +58,12 @@ var portfolio_data = [
         company: "Self",
         type: "react",
         img: {
-            main: "assets/img/portfolio/password-generator-main.png",
+            main: "assets/img/portfolio/Password-Generator-main.png",
             slider: [
-                "assets/img/portfolio/password-generator-1.png",
-                "assets/img/portfolio/password-generator-2.png",
-                "assets/img/portfolio/password-generator-3.png",
-                "assets/img/portfolio/password-generator-4.png",
+                "assets/img/portfolio/Password-Generator-1.png",
+                "assets/img/portfolio/Password-Generator-2.png",
+                "assets/img/portfolio/Password-Generator-3.png",
+                "assets/img/portfolio/Password-Generator-4.png",
             ],
         },
     },
