@@ -50,4 +50,21 @@ var portfolio_data = [
             ],
         },
     },
+    {
+        title: "Password Generator",
+        desc: "A Password Generator web app built with React and Vite, featuring customizable password options and a user-friendly interface.",
+        date: "05 Nov, 2024",
+        url: "https://surajgupta0.github.io/password-generator/",
+        company: "Self",
+        type: "react",
+        img: {
+            main: "assets/img/portfolio/password-generator-main.png",
+            slider: [
+                "assets/img/portfolio/password-generator-1.png",
+                "assets/img/portfolio/password-generator-2.png",
+                "assets/img/portfolio/password-generator-3.png",
+                "assets/img/portfolio/password-generator-4.png",
+            ],
+        },
+    },
 ];
