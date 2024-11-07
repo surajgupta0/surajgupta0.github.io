@@ -39,7 +39,7 @@ var portfolio_data = [
         company: "Self",
         type: "React",
         img: {
-            main: "assets/img/portfolio/Price Convertor/price-convertor.png",
+            main: "assets/img/portfolio/price-convertor.png",
             slider: [
                 "assets/img/portfolio/price-convertor.png",
                 "assets/img/portfolio/price-convertor-select.png",
