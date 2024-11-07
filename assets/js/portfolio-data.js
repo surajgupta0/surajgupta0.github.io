@@ -1,3 +1,7 @@
+var portfolio_category = {
+    wordpress: "Wordpress",
+    react: "React"
+}
 var portfolio_data = [
     {
         title: "Being Sevak Charitable Trust",
@@ -37,7 +41,7 @@ var portfolio_data = [
         date: "05 Nov, 2024",
         url: "https://surajgupta0.github.io/price-convertor/",
         company: "Self",
-        type: "React",
+        type: "react",
         img: {
             main: "assets/img/portfolio/price-convertor.png",
             slider: [
