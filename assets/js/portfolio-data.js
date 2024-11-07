@@ -31,4 +31,19 @@ var portfolio_data = [
             ],
         },
     },
+    {
+        title: "Price Convertor",
+        desc: "React application for converting currency values, featuring real-time exchange rate updates and a user-friendly interface.",
+        date: "05 Nov, 2024",
+        url: "https://surajgupta0.github.io/price-convertor/",
+        company: "Self",
+        type: "React",
+        img: {
+            main: "assets/img/portfolio/Price Convertor/price-convertor.png",
+            slider: [
+                "assets/img/portfolio/Price Convertor/price-convertor.png",
+                "assets/img/portfolio/Price Convertor/price-convertor-select.png",
+            ],
+        },
+    },
 ];
