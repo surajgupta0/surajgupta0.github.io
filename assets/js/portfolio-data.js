@@ -43,10 +43,10 @@ var portfolio_data = [
         company: "Self",
         type: "react",
         img: {
-            main: "assets/img/portfolio/price-convertor.png",
+            main: "assets/img/portfolio/Price Convertor/price-convertor.png",
             slider: [
-                "assets/img/portfolio/price-convertor.png",
-                "assets/img/portfolio/price-convertor-select.png",
+                "assets/img/portfolio/Price Convertor/price-convertor.png",
+                "assets/img/portfolio/Price Convertor/price-convertor-select.png",
             ],
         },
     },
@@ -58,12 +58,12 @@ var portfolio_data = [
         company: "Self",
         type: "react",
         img: {
-            main: "assets/img/portfolio/Password-Generator-main.png",
+            main: "assets/img/portfolio/Password Generator/Password-Generator-main.png",
             slider: [
-                "assets/img/portfolio/Password-Generator-1.png",
-                "assets/img/portfolio/Password-Generator-2.png",
-                "assets/img/portfolio/Password-Generator-3.png",
-                "assets/img/portfolio/Password-Generator-4.png",
+                "assets/img/portfolio/Password Generator/Password-Generator-1.png",
+                "assets/img/portfolio/Password Generator/Password-Generator-2.png",
+                "assets/img/portfolio/Password Generator/Password-Generator-3.png",
+                "assets/img/portfolio/Password Generator/Password-Generator-4.png",
             ],
         },
     },
