@@ -67,4 +67,20 @@ var portfolio_data = [
             ],
         },
     },
+    {
+        title: "Todo App",
+        desc: "A simple Todo application built with React. Features include adding, editing, toggling, and deleting tasks. Tasks are saved in local storage for persistence.",
+        date: "05 Nov, 2024",
+        url: "https://surajgupta0.github.io/react-todo/",
+        company: "Self",
+        type: "react",
+        img: {
+            main: "assets/img/portfolio/Todo/todo_main.png",
+            slider: [
+                "assets/img/portfolio/Todo/todo_main.png",
+                "assets/img/portfolio/Todo/todo_1.png",
+                "assets/img/portfolio/Todo/todo_2.png",
+            ],
+        },
+    },
 ];
