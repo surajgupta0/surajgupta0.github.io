@@ -1,6 +1,7 @@
 var portfolio_category = {
     wordpress: "Wordpress",
-    react: "React"
+    react: "React",
+    machine_learning: "Machine Learning"
 }
 var portfolio_data = [
     {
@@ -89,7 +90,7 @@ var portfolio_data = [
         date: "03 Jan, 2025",
         url: "https://movie-recommandation-sytem.onrender.com/",
         company: "Machine Learning",
-        type: "machine-learning",
+        type: "machine_learning",
         img: {
             main: "assets/img/portfolio/Movie Recommandation/movie_recommandation_main.png",
             slider: [
