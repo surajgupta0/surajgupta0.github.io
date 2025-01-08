@@ -83,4 +83,20 @@ var portfolio_data = [
             ],
         },
     },
+    {
+        title: "Movie Recommendation",
+        desc: "This project is a movie recommendation system built using Python and Streamlit. It recommends movies based on user-selected titles by querying a Pinecone vector database. The system fetches additional movie details such as posters, release dates, and overviews from The Movie Database (TMDb) API.",
+        date: "03 Jan, 2025",
+        url: "https://movie-recommandation-sytem.onrender.com/",
+        company: "Machine Learning",
+        type: "machine-learning",
+        img: {
+            main: "assets/img/portfolio/Movie Recommandation/movie_recommandation_main.png",
+            slider: [
+                "assets/img/portfolio/Movie Recommandation/movie_recommandation_main.png",
+                "assets/img/portfolio/Movie Recommandation/movie_recommandation_1.png",
+                "assets/img/portfolio/Movie Recommandation/movie_recommandation_2.png",
+            ],
+        },
+    },
 ];
