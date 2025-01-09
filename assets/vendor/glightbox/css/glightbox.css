@@ -140,11 +140,9 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 80vw !important;
 }
 
 .gslide-image img {
-
   max-height: 100vh;
   display: block;
   padding: 0;
@@ -156,7 +154,7 @@
   -ms-user-select: none;
   user-select: none;
   max-width: 100vw;
-  width: 100%;
+  width: auto;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;

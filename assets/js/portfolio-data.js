@@ -1,8 +1,10 @@
 var portfolio_category = {
     wordpress: "Wordpress",
     react: "React",
-    machine_learning: "Machine Learning"
+    machine_learning: "Machine Learning",
+    php: "PHP",
 }
+
 var portfolio_data = [
     {
         title: "Being Sevak Charitable Trust",
@@ -12,7 +14,7 @@ var portfolio_data = [
         company: "Being Sevak",
         type: "wordpress",
         img: {
-            main: "assets/img/portfolio/Being Sevak/Being-Sevak-Charitable-Trust-main.png",
+            main: "assets/img/portfolio/Being Sevak/Being-Sevak-Charitable-Trust.png",
             slider: [
                 "assets/img/portfolio/Being Sevak/Being-Sevak-Charitable-Trust.png",
                 "assets/img/portfolio/Being Sevak/Donation-–-Being-Sevak-Charitable-Trust.png",
@@ -28,7 +30,7 @@ var portfolio_data = [
         company: "Aashray for life foundation",
         type: "wordpress",
         img: {
-            main: "assets/img/portfolio/Aashray/Ashray-For-Life-Foundation-main.png",
+            main: "assets/img/portfolio/Aashray/Ashray-For-Life-Foundation.png",
             slider: [
                 "assets/img/portfolio/Aashray/Images-–-Ashray-For-Life-Foundation.png",
                 "assets/img/portfolio/Aashray/Donate-–-Ashray-For-Life-Foundation.png",
@@ -97,6 +99,23 @@ var portfolio_data = [
                 "assets/img/portfolio/Movie Recommandation/movie_recommandation_main.png",
                 "assets/img/portfolio/Movie Recommandation/movie_recommandation_1.png",
                 "assets/img/portfolio/Movie Recommandation/movie_recommandation_2.png",
+            ],
+        },
+    },
+    {
+        title: "Campus Recruitment System",
+        desc: "Campus Recruitment System is a web application that helps students to get placed in the company. It provides a platform for students to showcase their skills and get placed in the company.",
+        date: "03 Jan, 2022",
+        url: "http://campus.infinityfreeapp.com/",
+        company: "Self",
+        type: "php",
+        img: {
+            main: "assets/img/portfolio/Campus/campus_main.png",
+            slider: [
+                "assets/img/portfolio/Campus/campus_main.png",
+                "assets/img/portfolio/Campus/campus_1.png",
+                "assets/img/portfolio/Campus/campus_2.png",
+                "assets/img/portfolio/Campus/campus_3.png",
             ],
         },
     },
